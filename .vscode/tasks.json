@@ -1,0 +1,90 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Student Registration",
+      "type": "process",
+      "command": "mvn",
+      "args": [
+        "javafx:run",
+        "-DmainClass=assignments.StudentRegistration"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Simple Calculator",
+      "type": "process",
+      "command": "mvn",
+      "args": [
+        "javafx:run",
+        "-DmainClass=assignments.SimpleCalculator"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Temperature Converter",
+      "type": "process",
+      "command": "mvn",
+      "args": [
+        "javafx:run",
+        "-DmainClass=assignments.TemperatureConverter"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Student Grade Calculator",
+      "type": "process",
+      "command": "mvn",
+      "args": [
+        "javafx:run",
+        "-DmainClass=assignments.StudentGradeCalculator"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    },
+    {
+      "label": "Run Simple Banking Application",
+      "type": "process",
+      "command": "mvn",
+      "args": [
+        "javafx:run",
+        "-DmainClass=assignments.SimpleBankingApplication"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}

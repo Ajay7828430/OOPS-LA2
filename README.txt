@@ -9,27 +9,33 @@ Five separate JavaFX applications, using Java 17 and Maven.
 - Apache Maven installed and available as `mvn` in the terminal
 
 ## Open and run
-1. Extract this ZIP.
-2. In VS Code choose File > Open Folder and open `JavaFX_LA2_Assignments`.
-3. Open Terminal > New Terminal.
-4. Run one of these commands from the folder containing `pom.xml`:
+1. In VS Code, open the folder that contains `pom.xml`.
+2. To select an app in VS Code, choose Terminal > Run Task and select one of the five `Run ...` tasks.
+3. Or open Terminal > New Terminal. Confirm it is in the project folder by running:
+
+   `Test-Path .\pom.xml`
+
+   It should print `True`. If it prints `False`, change to the folder that contains `pom.xml`. The `cd` command only changes folders; it does not start the application.
+4. Run one of these commands in that terminal. A JavaFX window should open, and the command will keep running until you close the window:
 
    Student Registration:
-   `mvn javafx:run -DmainClass=assignments.StudentRegistration`
+   `mvn javafx:run "-DmainClass=assignments.StudentRegistration"`
 
    Simple Calculator:
-   `mvn javafx:run -DmainClass=assignments.SimpleCalculator`
+   `mvn javafx:run "-DmainClass=assignments.SimpleCalculator"`
 
    Temperature Converter:
-   `mvn javafx:run -DmainClass=assignments.TemperatureConverter`
+   `mvn javafx:run "-DmainClass=assignments.TemperatureConverter"`
 
    Student Grade Calculator:
-   `mvn javafx:run -DmainClass=assignments.StudentGradeCalculator`
+   `mvn javafx:run "-DmainClass=assignments.StudentGradeCalculator"`
 
    Simple Banking Application:
-   `mvn javafx:run -DmainClass=assignments.SimpleBankingApplication`
+   `mvn javafx:run "-DmainClass=assignments.SimpleBankingApplication"`
 
-Maven downloads the JavaFX dependencies the first time. Internet access is needed for the initial download.
+To build all five apps without opening a window, run `mvn verify`. Maven does not have a `check` lifecycle phase; use `verify` for a full build.
+
+The project Maven configuration uses the repository in your Windows user profile. Maven downloads JavaFX dependencies the first time, so Internet access is needed for the initial download.
 
 ## Check installations
 `java -version`
